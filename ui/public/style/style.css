@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;  
+}
+body {
+    background-color: #0C0B0B;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+a{
+    text-decoration: none;
+    
+}
+.poster-wrapper img {
+    transition: opacity 0.3s ease;
+}
+/* button a{
+    text-decoration: none;
+    color: #FFF
+} */
+nav .logo{
+    color: #FFF;
+}
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+.project-name {
+    font-size: 2.5em;
+    color: #B8B8B8;
+    margin-bottom: 30px;
+}
+.team-members{
+    color: #B8B8B8;
+    margin-bottom: 2rem;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #161515;;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    width: 100%;      
+    height: 200px;      
+    object-fit: cover; 
+}
+.card h3{
+    margin-top: 1rem;
+}
+.descr {
+    background-color: #161515;
+    color: #FFF;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.descr h3 {
+    margin-bottom: 15px;
+}
+
+.features {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.future {
+    display: grid;
+    background-color: #161515;
+    color: #FFF;
+    font-size: 1.3rem;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.future td {
+    padding: 15px;
+}
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        max-width: 60%;
+    }
+}
+
+.title h2{
+    color: #B8B8B8;
+}
+
+.title .btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+footer{
+    background: black;
+    height: 30vh;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    justify-content: space-between;
+}
+footer p{
+    color: #6A6A6A;
+}
+.footer-column h6 {
+    color: #6A6A6A;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-column ul li a {
+    color: #C9C9C9;
+    text-decoration: none;
+}
+
+/* ========== отсюда уже логин-регистр ==========  */
+
+.main-contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message{
+    background-color: #161515;
+    width: 100%;         
+    max-width: 566px;   
+    flex-direction: column; 
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.form h2{
+    color: #B8B8B8;
+    margin-bottom: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label{
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea{
+    background-color: #6A6A6A;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+
+}
+
+.form-group textarea{
+    resize: none;
+    min-height: 100px;
+}
+.submit-btn{
+
+}
+.forgot p{
+    font-size: 15px;
+    color: #7E7E7E;
+    margin-top: 10px;
+}
+
+.forgot p a{
+    text-decoration: none;
+    color: #C1C1C1;
+}
+
+.forgot p span{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+/* ========= здесь стили main ========== */
+.header-main{
+    display: block; 
+
+    background: url("/others/fight-club-removebg-preview.png");
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+
+}
+.header-main img {
+    background: inherit;
+}
+
+.content-slider button{
+    background-color: orange;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2px;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+.content-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 65vh;
+    margin-left: 60px;
+
+    font-family: 'Oswald', sans-serif;
+}
+.poster-wrapper {
+    position: relative;
+    width: 237px;
+    height: 350px;
+}
+.poster-wrapper img:first-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.wrapper-poster,
+.wrapper-poster-liked {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.main-container{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+/* watch styles */
+.iframe-wrapper{
+    margin-right: 60px;
+    margin-left: 60px;
+}
+.iframe{
+    width: 100%;
+    height: 600px;
+}
+.movie-info{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.trio {
+    display: flex;
+    gap: 2rem;              
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 1rem 0;  
+    font-weight: 600;
+}
+.trio li {
+    cursor: pointer;
+}
+.title-date{
+    color: #CDCDCD;
+    
+}
+.title-date p{
+    display: flex;
+    
+}
+.movie-info .description{
+    color: #878787;
+    margin-top: 2rem;
+}
+#search-results {
+    max-width: 100%;
+    overflow-x: auto; /* horizontal scroll if table is too wide */
+    margin-top: 10px;
+}
+.table td, .table th {
+    white-space: nowrap; /* prevent text from wrapping inside cells */
+}
+.hidden { display: none !important; }
+
+/* watch comment section */
+.comment-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.comment-container label{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.comment-container input{
+    background-color: #6A6A6A;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+.comment-container p{
+    margin-top: 2rem;
+    margin-bottom: 2re;
+}
+
+.btn
+.one-comment {
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.comment-left {
+  flex: 1;
+  min-width: 0; 
+}
+
+.comment-head {
+  display: flex;
+  flex-direction: column; 
+  gap: 4px;
+}
+
+.comment-date {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.comment-text {
+  margin-top: 6px;
+  max-width: 100%;
+  word-break: break-word;     
+  overflow-wrap: anywhere;     
+  white-space: normal;
+}
+
+.comment-actions {
+  flex-shrink: 0; 
+  margin-left: 12px;
+}
